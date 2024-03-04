@@ -1,0 +1,363 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width:100%;
+    background:white;
+
+    
+}
+
+h1,p {
+    margin: 0;
+}
+header{
+    height:max-content;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    
+}
+.logo{
+    width: 150px;
+    margin-left: 20px;
+}
+
+header nav ul{
+    margin: 0;
+    padding: 0;
+    background: white;
+    width: 100%;
+    width: 500px;
+    min-height: 100px;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav ul li{
+    font-size: 16px;
+
+   
+}
+ nav ul li a{
+    color:black;
+    font-family: "Lato", sans-serif;
+    text-decoration: none;
+
+}
+nav ul li a:hover{
+    border-bottom:3px solid #eb812b;
+}
+
+.nav-button{
+    background: #df6502;
+    color: white;
+    padding: 9px 20px;
+    margin-right: 20px;
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+    border: none;
+    border-radius: 5px;
+}
+.hamburger-menu{
+    display:none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.hamburger-menu:active{
+    height: 30px;
+}
+.dropdown {
+    display: none;
+    height: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    text-align: center;
+    top: 120px;
+    right: 20px;
+    width: 300px;
+    font-family: "Lato", sans-serif;
+    background: rgba(32, 29, 29,0.5);
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown.open{
+    height: 240px;
+    padding: 35px;
+}
+.dropdown li{
+    padding: 10px 0px;
+}
+.dropdown li a{
+ text-decoration: none;
+    color: whitesmoke;
+}
+
+.dropdown-button{
+    background: #df6502;
+    color: white;
+    padding: 15px 35px;
+    margin: 20px 0px;
+    border: none;
+    border-radius: 5px;
+}
+.home{
+    min-height:600px;
+    display: grid;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+}
+ .about{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .inner-box{
+     max-width:450px;
+     margin: 10px;
+ }
+
+ .inner-box h1{
+    color: #1f1917;
+    font-size:55px;
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-style: normal;
+  
+ }
+
+.inner-box .welcome-text{
+    margin:20px 0px;
+    color:#4d4d4e;
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+.contact-us-button{
+    border-radius: 20px;
+    color: black;
+    background: white;
+    margin: 10px 0px;
+    padding: 10px 20px;
+    border: 1px solid #df6502;
+}
+.contact-us-button:hover{
+    background: #fdeada;
+}
+.perfume-button:hover{
+    background:#ee9348;
+}
+.perfume-button{
+    background: #df6502;
+    border-radius: 20px;
+    margin: 10px 0px;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+}
+.welcome-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-container{
+    height:100%;
+    background:#ffdaaf;
+    border-top-right-radius: 270px;
+    border-top-left-radius: 270px;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+}
+.home-image{
+    width:90%;
+    height: 90%;
+}
+
+.services{
+    min-height:500px;
+    display: grid;
+    place-items: center;
+}
+.service-info{
+    text-align: center;
+    margin: 20px ;
+}
+.service-info h2{
+    color: black;
+    font-size: 40px;
+    font-family: "Fraunces", serif;
+    margin: 0;
+}
+.service-info p{
+    color: #3d3636;
+    line-height: 1.5em;
+}
+.collection{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.men,
+.women,
+.unisex{
+    text-align: center;
+    
+}
+.scent-name{
+    font-size: 20px;
+    margin: 10px 0px;
+
+}
+.scent-type{
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+}
+.men img,
+.women img,
+.unisex img{
+    width: 90%;
+}
+
+.perfume-section{
+    min-height:650px;
+    padding: 20px;
+}
+.perfume-section h2{
+    margin:10px 0px;
+    text-align: center;
+    font-family: "Fraunces", serif;
+}
+.products{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4,1fr);
+}
+.product-name{
+    font-size: 19px;
+    margin-bottom: 8px;
+   
+}
+.price{
+    color: #27211f;
+    font-weight: 800;
+    font-family: "Lato", sans-serif;
+}
+.item{
+    margin: 10px;
+    border-radius: 5px;
+    background:rgb(250, 243, 210);
+    padding-block: 10px;
+    text-align: center;
+    position: relative;
+    
+}
+.discount{
+    position: absolute;
+    top: 0;
+    padding: 3px;
+    background: black;
+    font-family: "Lato", sans-serif;
+    color: #e4dede;
+    right:0;
+}
+.item img{
+    width: 100%;
+}
+footer{
+    min-height: 200px;
+    padding: 20px;
+    display: grid;
+    place-items: center;
+    background:#ffdaaf;
+}
+
+footer h4{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Fraunces", serif;
+    
+}
+.contact-grid{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.contact-grid h4{
+    margin:10px 0px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Fraunces", serif;
+    color:#272424;
+
+}
+.contact-us,
+.social-links,
+.section-links{
+ text-align: center;
+}
+.contact-grid p{
+    margin: 5px 0px;
+    color:#504d4d;
+    font-family: "Lato", sans-serif;
+
+}
+
+/* Media queries */
+
+@media screen and (max-width:768px){
+    .nav-items,
+    .nav-button{
+        display: none;
+    }
+    .dropdown,
+    .hamburger-menu{
+        display: block;
+    }
+    .welcome-image{
+        grid-row: 1/-1;
+    }
+   
+    .inner-box{
+        text-align: center;
+    }
+    .inner-box h1{
+        font-size: 35px;
+    }
+    .contact-grid,
+    .products{
+        grid-template-columns: 1fr 1fr ;
+    }
+    
+    .collection,
+    .home
+    {
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width:430px){
+    .dropdown{
+        left:20px;
+        width: unset;
+    }
+    .inner-box h1{
+        font-size: 30px;
+    }
+    .products{
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-grid{
+        grid-template-columns: 1fr;
+    }
+}
